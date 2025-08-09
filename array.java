@@ -7,8 +7,13 @@ public class array {
         for(int i=0;i<arr.length;i++){
             arr[i]=sc.nextInt();        
         }
-        for(int i=0;i<size;i++){
-            
+        int x=sc.nextInt();
+        for(int i=0;i<arr.length;i++){
+            if(arr[i]==x){
+                System.out.println("founs at index"+i);
+            }
+            // System.out.print(arr[i]+"\t");
+
         }
     }
 }
