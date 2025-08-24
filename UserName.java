@@ -13,6 +13,8 @@ public class UserName {
             }
             }
             System.out.println(username);
+            sc.close();
+
         }
     }
 
