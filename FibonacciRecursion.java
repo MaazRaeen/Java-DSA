@@ -1,9 +1,9 @@
 public class FibonacciRecursion {
-    public static void printFact(int n, int a, int b){
+    public static void printFib(int n, int a, int b){
         if(n==0)return;
         int c=a+b;
         System.out.println(c);
-        printFact(n-1,b,c);
+        printFib(n-1,b,c);
         // return;
     }
     
@@ -12,6 +12,6 @@ public class FibonacciRecursion {
         System.out.println(a);
         System.out.println(b);
         int n=10;
-        printFact(n-2, a, b);
+        printFib(n-2, a, b);
     }
 }
