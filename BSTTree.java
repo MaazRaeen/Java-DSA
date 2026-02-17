@@ -10,8 +10,8 @@ public class BSTTree {
 
     static Node insertValues(Node root, int val){
         if(root ==null){
-            root= new Node(val);
-            return root;
+            return root= new Node(val);
+            // return root;
         }
         if(root.data>val){
             root.left = insertValues(root.left, val);
