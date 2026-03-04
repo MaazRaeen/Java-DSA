@@ -38,7 +38,31 @@ public class DeleteNode {
         
     }
     public static Node delete(Node root, int val){
+        if(root.data>val){
+            root.left = delete(root.left, val);
+        }else if(root.data<val){
+            root.right= delete(root.right, val);
+        }
+        else{ //👆 searching part | down👇 delte part
+            //case 1
+            if(root.left == null && root.right==null) return null;
+            //case 2
+            if(root.left == null) return root.right;
+            else if(root.right == null) return root.left;
+            //case 3
+            Node IS = inOrderSuccessor(root.right);
+            root.data = IS.data;
+            root.right = delete(root.right, IS.data);
+        }
+        return root;
          
+    } 
+    public static Node inOrderSuccessor(Node root){ //for case 3
+        while(root.left !=null){
+            root=root.left;
+
+        }
+        return root;
     }
 
     public static void main(String[] args) {
@@ -48,12 +72,8 @@ public class DeleteNode {
             root=insertValues(root, values[i]);
         }
         inorder(root);
-        serch(root, 0);
-        if(serch(root, 0)){
-            System.out.println("true");
-        }else{
-            System.out.println("false");
-        }
         System.out.println();
+        delete(root, 2);
+
     }
 }
