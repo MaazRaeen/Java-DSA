@@ -74,6 +74,7 @@ public class DeleteNode {
         inorder(root);
         System.out.println();
         delete(root, 2);
+        inorder(root);
 
     }
 }
