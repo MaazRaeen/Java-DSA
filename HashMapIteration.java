@@ -18,5 +18,15 @@ public class HashMapIteration {
             System.out.print(e.getKey()+" : ");
             System.out.println(e.getValue());
         }
+        System.out.println();
+        Set<String> keys = map.keySet();
+        for(String key :keys){
+            System.out.println(key + " " + map.get(key));
+        }
+
+        //remove
+
+        map.remove("china");
+        System.out.println(map);
     }
 }
