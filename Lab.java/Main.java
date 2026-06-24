@@ -45,5 +45,6 @@ public class Main {
         person2.displayInfo();
         person3.displayInfo();
         person4.displayInfo();
+        
     }
 }
