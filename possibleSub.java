@@ -7,8 +7,10 @@ public class possibleSub {
         for(int i =0; i<n; i++){
             nums[i] = sc.nextInt();
         }
+        
         ArrayList<Integer> ans = new ArrayList<>();
         List<List<Integer>> allSub = new ArrayList<>();
+        java.util.Arrays.sort(nums);
         sub(nums, ans, allSub, 0);
         System.out.print(allSub);
     }
