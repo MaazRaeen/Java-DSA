@@ -1,2 +1,3 @@
 
-        while(idx<nums.length && nums[idx] == nums[idx-1]){
+        //     System.out.print(cnt[i] +", ");
+        // }
