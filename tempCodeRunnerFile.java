@@ -1,3 +1,2 @@
 
-        //     System.out.print(cnt[i] +", ");
-        // }
+        // int ans2 = Integer.MAX_VALUE; 
