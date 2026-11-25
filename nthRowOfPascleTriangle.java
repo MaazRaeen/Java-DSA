@@ -7,10 +7,10 @@ public class nthRowOfPascleTriangle {
 
         int row = sc.nextInt();
         // int col = sc.nextInt();
-        for(int i =0; i<=row; i++){
+        for(int i =1; i<=row; i++){
             System.out.println(ans); 
             ans = ans * (row-i);
-            ans = ans/(i+1);
+            ans = ans/(i);
             
         }
         System.out.println();
